@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jason Trakas">
+    <meta name="description" content="Instructions to make a discord bot in python">
+    <meta name="keywords" content="python, discord, bot, discord.py, tutorial">
+    <title>Python Discord Bot Tutorial</title>
+    <link rel="stylesheet" type="text/css" href="webstyle.css">
+  </head>
+  <body>
+
+    <header>
+      <a href="home.html"><img src="imgs/header.png"></a>
+    </header>
+
+    <nav class="navbar">
+      <hr>
+      <ul>
+        <li><a href="home.html">Main Tutorial</a></li>
+        <li><a href="one.html">Setting Up discord.py</a></li>
+        <li><a href="two.html">Making a Game Bot</a></li>
+      </ul>
+      <hr>
+    </nav>
+
+    <div class="page">
+
+      <div class="contents">
+        <h2>Table of Contents:</h2>
+
+        <p>
+          <ul>
+            <li><a href="#Adding the Bot to Your Server">Adding the Bot to Your Server</a></li>
+            <li><a href="#More on Permissions">More on Permissions</a></li>
+          </ul>
+        </p>
+      </div>
+
+      <div class="article">
+
+        <a id="Adding the Bot to Your Server">
+          <h2>Adding the Bot to Your Server</h2>
+        </a>
+
+        <p>
+          Now that we've created a bot (or you've created a bot) we need to add it to our server to use it. We can do
+          this from the discord developer portal. Go to the developer portal and then select the application you want
+          to add to your server:<br><br><img src="imgs/botHomeScreen.png"><br><br> Next select the Oauth2 button in
+          the sidebar and from the dropdown menu pick url generator:<br><br><img src="imgs/Oauth2.png"><br><br>
+          From here we need to pick a scope for our application. We made a bot in this tutorial so we will select
+          the bot option. This will open a new menu where you can select permissions. As I said in the tutorial we
+          will just select the administrator permission as we know what the bot does and we're not using it in random
+          people's servers. This will generate a link at the bottom:<br><br><img src="imgs/Oauth2Link.png"><br><br>
+          Copy this linkand paste it in a new tab. This will bring you to a page like this:<br><br>
+          <img src="imgs/AddToServer.png"><br><br> Then you just select the server you want to add it to and authorize
+          it. Note that you will need administrator permissions in that server to add it. That's it, now the bot is in
+          your server and you can run your script and test it out.
+        </p>
+
+        <a id="More on Permissions">
+          <h2>More on Permissions</h2>
+        </a>
+
+        <p>
+          Just because we used the administrator permission for our own server doesn't mean it's a good fit for our bot.
+          In fact, no popular discord bots have this permission. One major reason for that is if you didn't make the
+          bot yourself, you're not sure if you can totally trust it. Therefore people would rather download a bot that
+          doesn't instantly have access to all of the server's features. If you are making a bot for public use you need
+          to learn how to choose permissions. Here is the full list of permissions:<br><br>
+          <img src="imgs/AllPermissions.png"><br><br> As you can see they are divided into 3 categories: general, text,
+          and voice. The voice permissions define what the bot can do in voice channels, while the text section is for
+          text channels. The general section includes everything else including all kinds of server administration
+          permissions. The two important ones for our bot would be the slash commands permission and the send
+          messages permission. The first one allows people in the server to see and use our commands, while the
+          second one allows us to reply to these commands with messages. If you're not sure what permissions to
+          give your bot, go through your code and check if you use each one. If you don't, it's better to just leave
+          that permission off.
+        </p>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>

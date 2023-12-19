@@ -1,0 +1,19 @@
+body{
+  background-color: black;
+}
+
+.page{
+  background-image: url("imgs/AngryDiscord.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+}
+
+
+.page p{
+  text-align: center;
+  width: inherit;
+  font-size: 30px;
+  color: lightGrey;
+  font-family: sans-serif;
+}

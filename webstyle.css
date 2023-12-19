@@ -1,0 +1,98 @@
+body{
+  background-color: black;
+}
+
+header{
+  display: inline;
+  align-items: center;
+  /*padding-left: 22%;*/
+}
+
+nav.navbar{
+  width: 100%;
+  overflow: auto;
+}
+
+nav.navbar li{
+  display: inline;
+  margin: 0px 20px;
+}
+
+nav.navbar li a{
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px 20px;
+}
+
+nav.navbar li a:link, a:visited{
+  background-color: #8E90F8;
+  color: lightGrey;
+}
+
+nav.navbar li a:hover, a:active{
+  text-shadow: 2px 2px 10px deepSkyBlue;
+  background-color: #524DAC;
+}
+
+nav.navbar hr{
+  margin: 5px 0px;
+  border-color: lightGrey;
+  height: 2;
+}
+
+/*Everything under nav bar*/
+.page{
+  display: flex;
+  font-family: sans-serif;
+}
+
+/*.contents is the table of contents*/
+.contents{
+  width: 20%;
+  border: 2px solid lightGrey;
+  color: lightGrey;
+  flex: 0.2;
+}
+
+.contents h2{
+  text-align: center;
+}
+
+.contents li{
+  margin-bottom: 10px;
+}
+
+.contents a:link, a:visited{
+  color: lightGrey;
+}
+
+.contents a:active, a:hover{
+  color: grey;
+}
+
+/*.article is the main article next to the table of contents*/
+.article{
+  width: 70%;
+  color: lightGrey;
+  flex: 0.8;
+  padding: 0px 10px;
+}
+
+.article h2{
+  text-align: center;
+}
+
+.article p{
+  text-align: center;
+  padding: 0px 15%;
+}
+
+.article a:hover{
+  color: lightGrey;
+}
+
+.article p a:hover, a:active{
+  color: grey;
+}
